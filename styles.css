@@ -1,0 +1,496 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: inherit;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #about {
+    padding: 20px;
+  }
+  
+
+
+#pg-details {
+    padding: 20px;
+  }
+  
+  #contact-form {
+    padding: 20px;
+  }
+  
+/* ... Existing CSS rules ... */
+
+#image-slider {
+    padding: 20px;
+  }
+  
+  .slider-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-container img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  
+  /* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Global styles for header and navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the hero section */
+#hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  text-align: center;
+  padding: 50px;
+}
+
+#hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#hero .btn {
+  display: inline-block;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+  background-color: #ffaf5e;
+}
+
+/* Styling for the main content sections */
+main {
+  padding: 20px;
+}
+
+#about {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#pg-details {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+#pg-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#pg-details ul {
+  font-size: 16px;
+  line-height: 1.8;
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Styling for the contact form */
+#contact-form {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+#contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ffaf5e;
+}
+
+/* Styling for the image slider */
+#image-slider {
+  padding-bottom: 30px;
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container img {
+  max-width: 10%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Additional styles for the footer */
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+  /* ... Existing CSS rules ... */
+
+/* Mobile navigation */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+/* ... Existing CSS rules ... */
+
+/* Gallery styles */
+#gallery {
+  padding-bottom: 30px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Image Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 80vh;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+/* ... Existing CSS rules ... */
+
+/* Highlight the active navigation link */
+nav a.active {
+  font-weight: bold;
+  color: #ff8c00;
+}
+/* ... Existing CSS rules ... */
+
+/* Responsive layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .carousel-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    margin: 3px;
+    font-size: 14px;
+  }
+}
+/* ... Existing CSS rules ... */
+
+/* Additional styles */
+body {
+  background-color: #f2f2f2;
+}
+
+header h1 {
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+  color: #ff8c00;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#success-notification {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* ... Responsive styles (from the previous update) ... */
